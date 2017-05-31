@@ -13,7 +13,7 @@ raw_tax_by_class <- bind_rows(raw_tax_by_class_to_09, raw_tax_by_class_pre_09)
 
 # Data on total property assessments by class
 raw_assessed_by_class <- read_csv("AssessedValuebyClass.csv")
-  
+
 # Analysis of tax rates
 all_tax_rates_by_class <- read_csv("tax_rates_by_class_all.csv")
 
@@ -81,4 +81,5 @@ tax_bill %>%
   rename(avg_tax_bill = `Single Family Tax Bill*`) %>%
   filter(Municipality == "Walpole") %>% 
   group_by(Year) %>% 
-  summarize(walpole_tax = mean(avg_tax_bill))
+  summarize(walpole_tax = mean(avg_tax_bill),
+            walpole_homes = mean(`Average Single Family Value`))
