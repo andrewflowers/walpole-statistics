@@ -1,6 +1,6 @@
 # By Andrew Flowers, andrew.w.flowers@gmail.com
 # What is the Walpole, MA residential real estate tax burden?
-# Source: Source: Massachusetts Division of Local Services
+# Source: Massachusetts Division of Local Services
 # Link: http://www.mass.gov/dor/local-officials/municipal-databank-and-local-aid-unit/databank-reports-new.html
 
 library(tidyverse)
